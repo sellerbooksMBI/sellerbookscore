@@ -1,4 +1,5 @@
 name: Deploy SellerBooks Core to GitHub Pages
+# Rebuild after Supabase repository configuration is updated
 
 on:
   push:

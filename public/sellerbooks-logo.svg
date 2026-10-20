@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" role="img" aria-label="MBI Marketplace Business Intelligence logo">
+  <defs>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#00b7ff"/><stop offset=".48" stop-color="#0058c8"/><stop offset="1" stop-color="#092d75"/></linearGradient>
+    <linearGradient id="letters" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#062a70"/><stop offset="1" stop-color="#0877e8"/></linearGradient>
+  </defs>
+  <circle cx="90" cy="90" r="85" fill="#fff" stroke="url(#ring)" stroke-width="7"/>
+  <circle cx="90" cy="90" r="75" fill="#fff" stroke="#d7eaff" stroke-width="1.5"/>
+  <g fill="#006bdc">
+    <rect x="57" y="78" width="9" height="26" rx="1"/><rect x="70" y="68" width="9" height="36" rx="1"/><rect x="83" y="57" width="9" height="47" rx="1"/><rect x="96" y="47" width="9" height="57" rx="1"/>
+    <path d="M52 72 L76 59 L92 42 L108 37 L124 25 L122 36 L139 34 L130 50 L128 40 L110 49 L94 54 L79 70 L58 82 Z"/>
+  </g>
+  <text x="90" y="126" text-anchor="middle" font-family="Arial,sans-serif" font-size="42" font-weight="900" letter-spacing="-3" fill="url(#letters)">MBI</text>
+  <text x="90" y="139" text-anchor="middle" font-family="Arial,sans-serif" font-size="5.8" font-weight="700" fill="#08285d">MARKETPLACE BUSINESS INTELLIGENCE</text>
+  <path d="M52 145 H128" stroke="#0b62c7" stroke-width="1"/>
+  <text x="90" y="153" text-anchor="middle" font-family="Arial,sans-serif" font-size="5.6" fill="#203b62">DATA TODAY</text>
+  <text x="90" y="160" text-anchor="middle" font-family="Arial,sans-serif" font-size="5.6" fill="#203b62">BETTER TOMORROW</text>
+</svg>

@@ -53,13 +53,13 @@ function authView(mode = 'login', message = '') {
   document.querySelector('#auth-form').onsubmit = async (e) => {
     e.preventDefault(); const form = new FormData(e.currentTarget); const email = String(form.get('email')).trim(); const password = String(form.get('password'));
     const status = document.querySelector('#form-message'); status.innerHTML = alertBox(lang === 'ID' ? 'Memproses…' : 'Working…');
-    const result = isRegister ? await supabase.auth.signUp({ email, password, options: { emailRedirectTo: window.location.origin } }) : await supabase.auth.signInWithPassword({ email, password });
+    const result = isRegister ? await supabase.auth.signUp({ email, password, options: { emailRedirectTo: window.location.origin + window.location.pathname } }) : await supabase.auth.signInWithPassword({ email, password });
     if (result.error) { status.innerHTML = alertBox(result.error.message, 'error'); return; }
     if (isRegister && !result.data.session) { status.innerHTML = alertBox(t('registerOk'), 'success'); return; }
     await initialize();
   };
   document.querySelector('#google').onclick = async () => {
-    const { error } = await supabase.auth.signInWithOAuth({ provider: 'google', options: { redirectTo: window.location.origin } });
+    const { error } = await supabase.auth.signInWithOAuth({ provider: 'google', options: { redirectTo: window.location.origin + window.location.pathname } });
     if (error) document.querySelector('#form-message').innerHTML = alertBox(`${t('googleError')} ${error.message}`, 'error');
   };
 }

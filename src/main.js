@@ -1,9 +1,8 @@
-import { createClient } from '@supabase/supabase-js';
-import './style.css';
+import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
 
-const env = import.meta.env;
-const supabaseUrl = env.VITE_SUPABASE_URL;
-const supabaseKey = env.VITE_SUPABASE_ANON_KEY;
+const env = import.meta.env || {};
+const supabaseUrl = env.VITE_SUPABASE_URL || window.SELLERBOOKS_CONFIG?.supabaseUrl;
+const supabaseKey = env.VITE_SUPABASE_ANON_KEY || window.SELLERBOOKS_CONFIG?.supabaseAnonKey;
 const supabase = supabaseUrl && supabaseKey ? createClient(supabaseUrl, supabaseKey) : null;
 let lang = localStorage.getItem('sellerbooks-core-language') === 'EN' ? 'EN' : 'ID';
 let currentUser = null;

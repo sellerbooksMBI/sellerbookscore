@@ -35,3 +35,23 @@ body::before, body::after, #app::before, #app::after, .page::before, .page::afte
   width: 100% !important; height: 100% !important;
   max-width: 100% !important; max-height: 100% !important; object-fit: contain !important;
 }
+
+
+/* Final header logo sizing: compact brand mark. */
+.top .brand { gap: 10px !important; }
+.top .brand .logo-mark {
+  display: block !important;
+  width: 32px !important; height: 32px !important;
+  min-width: 32px !important; max-width: 32px !important;
+  flex: 0 0 32px !important;
+  padding: 0 !important; margin: 0 !important;
+  overflow: hidden !important; border-radius: 50% !important;
+  background: #fff !important;
+}
+.top .brand .logo-mark img {
+  display: block !important;
+  width: 32px !important; height: 32px !important;
+  min-width: 32px !important; max-width: 32px !important;
+  min-height: 32px !important; max-height: 32px !important;
+  object-fit: contain !important; position: static !important;
+}

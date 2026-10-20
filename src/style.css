@@ -55,3 +55,29 @@ body::before, body::after, #app::before, #app::after, .page::before, .page::afte
   min-height: 32px !important; max-height: 32px !important;
   object-fit: contain !important; position: static !important;
 }
+
+
+/* Correct header brand size with high specificity. */
+.top > .brand > .logo-mark {
+  width: 28px !important;
+  height: 28px !important;
+  min-width: 28px !important;
+  min-height: 28px !important;
+  max-width: 28px !important;
+  max-height: 28px !important;
+  flex: 0 0 28px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border-radius: 50% !important;
+  overflow: hidden !important;
+  display: block !important;
+}
+.top > .brand > .logo-mark > img {
+  width: 100% !important;
+  height: 100% !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  object-fit: contain !important;
+}

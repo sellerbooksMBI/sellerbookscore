@@ -1,3 +1,4 @@
+import './style.css';
 import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
 
 const env = import.meta.env || {};
